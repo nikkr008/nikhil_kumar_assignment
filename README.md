@@ -1,6 +1,37 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Item Manager App
 
-# Getting Started
+This is a React Native application that allows users to create, read, update, and delete items with names and descriptions. The app uses SQLite for local storage and Redux for state management.
+
+## Features
+
+- View a list of items
+- Add new items with name and description
+- Edit existing items
+- Delete items
+- Data persistence using SQLite database
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (>= 18)
+- React Native development environment set up
+- For iOS: Xcode
+- For Android: Android Studio
+
+### Installation
+
+1. Clone this repository
+2. Install dependencies:
+```sh
+# Using npm
+npm install
+
+# OR using Yarn
+yarn
+```
+
+## Running the Application
 
 > **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
 
@@ -66,7 +97,7 @@ This is one way to run your app — you can also build it directly from Android 
 
 Now that you have successfully run the app, let's make changes!
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
 
 When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
 
@@ -95,3 +126,24 @@ To learn more about React Native, take a look at the following resources:
 - [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+
+## Project Structure
+
+- `src/screens/`: Contains all app screens (ItemList, AddItem, EditItem)
+- `src/services/`: Contains database service for SQLite operations
+- `src/store/`: Contains Redux store and slices for state management
+
+## Technologies Used
+
+- React Native
+- Redux & Redux Toolkit
+- React Navigation
+- SQLite Storage
+- React Native Vector Icons
+
+## Limitations and Assumptions
+
+- The app assumes a modern mobile device with SQLite storage capabilities
+- Limited error handling for database operations
+- No authentication or user management
+- Simple data model with only name and description fields
